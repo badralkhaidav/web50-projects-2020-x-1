@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Success!
+{% endblock %}
+
+{% block body %}
+    <h1>Success!</h1>
+{{message}}
+    You have successfully booked your flight.
+    <a href="{{url_for('register')}}">Register</a>
+    <a href="{{url_for('index')}}">Logout</a>
+{% endblock %}
